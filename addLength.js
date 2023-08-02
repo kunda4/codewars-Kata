@@ -25,7 +25,7 @@ function addLength(str) {
   return str.split(" ").map((s) => `${s} ${s.length}`);
 }
 //new way
-var addLength = (s) => s.split(" ").map((x) => x + " " + x.length);
+let addLength = (s) => s.split(" ").map((x) => x + " " + x.length);
 
 //new way
 function addLength(str) {
