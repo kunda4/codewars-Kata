@@ -12,7 +12,7 @@ Input/Output
 
 String to construct, A contains only lowercase English letters.
 
-Constraints: 3 ≤ A.length ≤ 9.
+Constraints: 3 ≤ A. length ≤ 9.
 
 [input] string B
 
