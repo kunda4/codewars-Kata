@@ -19,17 +19,17 @@ function high(x) {
 
   let charValue = splitChar.map((element) => {
     let count = 0;
-    element.map((el) => (count += el.toUpperCase().charCodeAt() - 64));
+    element.map((el) => (count += el.toUpperCase().charCodeAt(0) - 64));
     return count;
   });
-  let largest = 0;
-  let largestIndex;
-  for (let i = 0; i < charValue.length; i++)
-    if (charValue[i] > largest) {
-      largest = charValue[i];
-      largestIndex = i;
-    }
-  return splitArr[largestIndex];
+  //   let largest = 0;
+  //   let largestIndex;
+  //   for (let i = 0; i < charValue.length; i++)
+  //     if (charValue[i] > largest) {
+  //       largest = charValue[i];
+  //       largestIndex = i;
+  //     }
+  //   return splitArr[largestIndex];
+  return splitArr[charValue.sort((a, b) => b - a)[0]];
 }
-console.log(high("aa b"));
 console.log(high("what time are we climbing up the volcano"));
