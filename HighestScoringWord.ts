@@ -1,6 +1,3 @@
-export function high(str:string): string {
-
-    let splitArr = str.split(' ')
   /**
  Given a string of words, you need to find the highest scoring word.
 
@@ -14,6 +11,10 @@ If two words score the same, return the word that appears earliest in the origin
 
 All letters will be lowercase and all inputs will be valid.
  */ 
+
+export function high(str:string): string {
+
+    let splitArr = str.split(' ')
     let splitChar = splitArr.map((ele)=> ele.split(''))
   
     let charValue = splitChar.map(element=>{
