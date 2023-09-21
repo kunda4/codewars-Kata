@@ -26,3 +26,18 @@ export function duplicateCount(text: string): number{
     })
     return myNew.length;
   }
+
+  // Other way by filtering
+
+  export function duplicateCount2(text: string): number{
+    //...
+    let myArr:string[] =[]
+    let myText = text.toLowerCase().split("")
+   let myduplArr = myText.filter((el,index)=> myText.indexOf(el) !== index)
+   for(let ele of myduplArr){
+       if(!myArr.includes(ele)){
+           myArr.push(ele)
+       }
+   }
+   return myArr.length
+  }
