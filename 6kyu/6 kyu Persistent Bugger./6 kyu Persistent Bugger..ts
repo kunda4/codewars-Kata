@@ -10,7 +10,7 @@ For example (Input --> Output):
  */
 
 export function persistence(num: number): number {
-    // your code here
+    
      let count = 0
      if(num.toString().split('').length === 1)return 0
      
