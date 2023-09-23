@@ -10,12 +10,10 @@ You should use for..in in your code, otherwise your solution may not pass this k
  */
 
 function giveMeFive(obj) {
-  //coding here
   let myArr = [];
   for (let key in obj) {
-    if (obj.hasOwnProperty(key)) if (key.length === 5) myArr.push(key);
+    if (key.length === 5) myArr.push(key);
     if (obj[key].length === 5) myArr.push(obj[key]);
   }
   return myArr;
 }
-console.log(giveMeFive({ Our: "earth", is: "a", beautyful: "world" }));
