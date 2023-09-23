@@ -14,6 +14,7 @@ Notes
 The first argument can be an empty string
 In languages with no distinct character data type, the second argument will be a string of length 1
  */
+
 export function strCount(str: string, letter: string): number {
     // GO!
     return str.split("").filter(ele=> ele === letter).length
